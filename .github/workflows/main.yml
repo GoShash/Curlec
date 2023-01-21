@@ -1,0 +1,17 @@
+name: Build and Deploy Website
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build website
+      run: <command to build your website>
+    - name: Deploy website
+      run: <command to deploy your website>
