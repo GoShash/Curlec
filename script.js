@@ -1,34 +1,18 @@
-const form = document.getElementById("lead-gen-form");
-form.addEventListener("submit", validateForm);
+/* Add your custom javascript here */
+$(document).ready(function(){
+  $("form").submit(function(e){
+    e.preventDefault();
 
-function validateForm(event) {
-  event.preventDefault();
+    // Get the form data
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var business = $("#business").val();
 
-  const name = document.getElementById("name");
-  const email = document.getElementById("email");
-  const phone = document.getElementById("phone");
-  const company = document.getElementById("company");
+    // Send the data to your server or google sheet
+    // ...
 
-  if (!name.value) {
-    alert("Name is required");
-    return;
-  }
-
-  if (!email.value) {
-    alert("Email is required");
-    return;
-  }
-
-  if (!phone.value) {
-    alert("Phone number is required");
-    return;
-  }
-
-  if (!company.value) {
-    alert("Company name is required");
-    return;
-  }
-
-  // If all fields are valid, submit the form
-  form.submit();
-}
+    // Show a message to the user
+    alert("Thank you for your interest in Curlec Payment Gateway. Our sales team will contact you soon.");
+  });
+});
