@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Curlec Payment Gateway Sample</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to Curlec</h1>
-    </header>
-    <section>
-      <p>Our platform is designed to make accepting payments easy, secure, and efficient for businesses of all sizes.</p>
-      <ul>
-        <li>Accept payments easily and securely</li>
-        <li>Integrate with your existing systems</li>
-        <li>Enjoy transparent and competitive pricing</li>
-        <li>Benefit from our 24/7 customer support</li>
-      </ul>
-    </section>
-    <section>
-      <form id="lead-gen-form">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <title>Curlec Payment Gateway</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Curlec Payment Gateway</h1>
+    <form>
+      <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="company">Company Name:</label>
-        <input type="text" id="company" name="company" required>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-    <footer>
-      <p>Thank you for your interest in Curlec!</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+      </div>
+      <div class="form-group">
+        <label for="business">Business Name:</label>
+        <input type="text" class="form-control" id="business" placeholder="Enter business name">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
 </html>
